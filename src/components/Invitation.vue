@@ -1,35 +1,91 @@
 <template>
   <div class="bg-couple">
     <div class="container ">
-      <div class="">
-        <ul class=" d-flex justify-content-around mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#">Akad Nikah</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Resepsi Pernikahan</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex justify-content-center margin-custom text-white">
-        <h1 class="">Me and you just us Two</h1>
-      </div>
-      <div class="d-flex justify-content-center margin-custom text-white">
-        <h5 class="">19.12.2020</h5>
-      </div>
+      <div class=""></div>
+      <Tabs>
+        <Tab name="Akad Nikah" selected="true">
+          <div class="text-center text-white border py-5">
+            <h2 class="py-5">Akad Nikah</h2>
+            <h3>Date : Des, 19, 2020 | 8 AM TILL END</h3>
+            <br />
+            <h3>
+              Location: Jalan ABC, Komplek, Perumahan <br />Griya, Bandung, Jawa
+              Barat
+            </h3>
+            <div class="py-5 ">
+              <button
+                type="button"
+                class="btn bg-btn font-weight-bolder btn-outline-secondary text-dark py-3 col-3 "
+              >
+                Save The Date
+              </button>
+            </div>
+          </div>
+          <div class="py-5 text-center">
+            <a
+              type="button"
+              class="btn bg-btn mx-4 font-weight-bolder btn-outline-secondary text-dark py-3 col-1 "
+            >
+              10 DAYS
+            </a>
+            <a
+              type="button"
+              class="btn bg-btn font-weight-bolder btn-outline-secondary text-dark py-3 col-1 "
+            >
+              12 HOURS
+            </a>
+          </div>
+        </Tab>
+        <Tab name="Resepsi Nikah">
+          <div class="text-center text-white border py-5">
+            <h2 class="py-5 ">Resepsi Nikah</h2>
+            <h3>Date : Des, 19, 2020 | 8 AM TILL END</h3>
+            <br />
+            <h3>
+              Location: Jalan ABC, Komplek, Perumahan <br />Griya, Bandung, Jawa
+              Barat
+            </h3>
+            <div class="py-5 ">
+              <button
+                type="button"
+                class="btn bg-btn font-weight-bolder btn-outline-secondary text-dark py-3 col-3 "
+              >
+                Save The Date
+              </button>
+            </div>
+          </div>
+          <div class="py-5 text-center ">
+            <a
+              type="button"
+              class="btn bg-btn mx-4 font-weight-bolder btn-outline-secondary text-dark py-3 col-1 "
+            >
+              10 DAYS
+            </a>
+            <a
+              type="button"
+              class="btn bg-btn font-weight-bolder btn-outline-secondary text-dark py-3 col-1 "
+            >
+              12 HOURS
+            </a>
+          </div>
+        </Tab>
+      </Tabs>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Tab from "@/components/Tab.vue";
+import Tabs from "@/components/Tabs.vue";
+export default {
+  components: { Tab, Tabs }
+};
 </script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 h1 {
-  font-family: "Parisienne", cursive;
   font-size: 4em;
 }
 
@@ -39,8 +95,18 @@ a {
   font-size: 1em;
 }
 
+.bg-btn {
+  background: #ffffff;
+  opacity: 0.4;
+  border-radius: 8px;
+}
+
 .image-adjust img {
   height: 6rem;
+}
+
+.border {
+  border-radius: 20px;
 }
 
 ul li {
@@ -49,18 +115,16 @@ ul li {
 }
 
 .margin-custom {
-  margin-top: 50vh;
+  margin-top: 40vh;
 }
 
 .bg-couple {
   width: 100%;
   height: auto;
-  background: url("../assets/invitation.png") no-repeat center center;
+  background: url("../assets/invit.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  opacity: 0.65;
 }
 </style>
