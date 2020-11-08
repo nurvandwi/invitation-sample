@@ -30,7 +30,7 @@
             </a>
             <a
               type="button"
-              class="btn bg-btn font-weight-bolder btn-outline-secondary text-dark py-3 col-1 "
+              class="btn bg-btn font-weight-bolder btn-outline-secondary text-dark py-3 col-2 "
             >
               12 HOURS
             </a>

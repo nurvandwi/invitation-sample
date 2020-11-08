@@ -70,4 +70,17 @@ ul li {
   -o-background-size: cover;
   background-size: cover;
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .bg-couple {
+    width: 100%;
+    height: auto;
+    background: url("../assets/background-wedding.png") no-repeat center center
+      fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
 </style>
